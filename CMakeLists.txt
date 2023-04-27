@@ -1,4 +1,8 @@
 cmake_minimum_required(VERSION 3.0)
+SET(CMAKE_BUILD_TYPE "Debug")
+SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb")
+SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
+
 project(v4l2_plane)
 
 # find_package(Libv4l2 REQUIRED)
